@@ -1,0 +1,455 @@
+/* =========================
+   RESET & DASAR WEBSITE
+   ========================= */
+*{
+    margin: 0; /* Menghapus margin bawaan browser */
+    padding: 0; /* Menghapus padding bawaan browser */
+    box-sizing: border-box; /* Agar ukuran elemen lebih mudah diatur */
+    font-family: Arial, Helvetica, sans-serif; /* Font default website */
+}
+
+body{
+    background: #f4f4f4; /* Warna background utama */
+    color: #333; /* Warna teks default */
+}
+
+/* =========================
+   HEADER WEBSITE
+   ========================= */
+header{
+    background: linear-gradient(to right, #0f776e, #134e4a); /* Background gradasi */
+    color: white; /* Warna teks */
+    text-align: center; /* Posisi teks di tengah */
+    padding: 20px; /* Jarak dalam */
+}
+
+/* =========================
+   NAVIGASI / NAVBAR
+   ========================= */
+nav{
+    background: rgba(19, 78, 74, 0.9); /* Warna navbar transparan */
+    backdrop-filter: blur(5px); /* Efek blur */
+    padding: 12px; /* Jarak dalam navbar */
+    position: sticky; /* Navbar menempel saat discroll */
+    top: 0; /* Posisi menempel di atas */
+    z-index: 1000; /* Agar navbar tidak tertutup */
+}
+
+/* LIST MENU */
+nav ul{
+    display: flex; /* Membuat menu sejajar */
+    justify-content: center; /* Posisi menu di tengah */
+    list-style: none; /* Menghilangkan titik list */
+    gap: 20px; /* Jarak antar menu */
+    flex-wrap: wrap; /* Turun ke bawah jika layar kecil */
+}
+
+/* LINK MENU */
+nav ul li a{
+    color: white; /* Warna teks */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    font-weight: bold; /* Menebalkan teks */
+    transition: 0.3s; /* Animasi hover */
+}
+
+/* HOVER MENU */
+nav ul li a:hover{
+    color: yellow; /* Warna saat disentuh mouse */
+}
+
+/* LINK NAVBAR */
+nav a{
+    color: white; /* Warna teks */
+    text-decoration: none; /* Menghilangkan underline */
+    margin: 0 15px; /* Jarak kanan kiri */
+    font-weight: bold; /* Menebalkan teks */
+    transition: 0.3s; /* Animasi */
+}
+
+/* HOVER LINK NAVBAR */
+nav a:hover{
+    color: #ffd700; /* Warna hover */
+    border-bottom: 2px solid #ffd700; /* Garis bawah */
+    padding-bottom: 5px; /* Jarak garis bawah */
+}
+
+/* =========================
+   HERO / BANNER
+   ========================= */
+.hero{
+    background: linear-gradient(rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)),
+    url('assets/gambar/banner.jpg');
+    /* Overlay hitam + gambar banner */
+
+    background-size: cover; /* Gambar memenuhi area */
+    background-position: center; /* Posisi gambar tengah */
+
+    height: 350px; /* Tinggi hero */
+
+    display: flex; /* Flexbox */
+    justify-content: center; /* Horizontal tengah */
+    align-items: center; /* Vertical tengah */
+
+    text-align: center; /* Teks rata tengah */
+    color: white; /* Warna teks */
+    padding: 20px; /* Jarak dalam */
+}
+
+/* JUDUL HERO */
+.hero-text h1{
+    font-size: 40px; /* Ukuran teks */
+    margin-bottom: 10px; /* Jarak bawah */
+}
+
+/* =========================
+   SECTION UMUM
+   ========================= */
+section{
+    padding: 50px 20px; /* Jarak tiap section */
+}
+
+/* =========================
+   TEKS PROFIL
+   ========================= */
+.teksprofil{
+    text-align: left; /* Teks rata kiri */
+    background: white; /* Background putih */
+    padding: 25px; /* Jarak dalam */
+    margin-top: 20px; /* Jarak atas */
+    border-radius: 10px; /* Sudut melengkung */
+    width: fit-content; /* Ukuran mengikuti isi */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Bayangan */
+}
+
+/* =========================
+   VISI MISI
+   ========================= */
+.visi-misi{
+    display: flex; /* Box berjajar */
+    justify-content: center; /* Posisi tengah */
+    gap: 20px; /* Jarak antar box */
+    margin-top: 30px; /* Jarak atas */
+}
+
+/* LIST DI DALAM BOX */
+.box ol{
+    text-align: left; /* Teks list rata kiri */
+}
+
+/* BOX VISI MISI */
+.box{
+    width: 450px; /* Lebar box */
+    background: linear-gradient(135deg, #0f766e, #115e59); /* Gradasi */
+    color: white; /* Warna teks */
+    padding: 35px; /* Jarak dalam */
+    border-radius: 20px; /* Sudut melengkung */
+    text-align: center; /* Teks tengah */
+    transition: 0.3s; /* Animasi */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* Bayangan */
+    cursor: pointer; /* Cursor tangan */
+}
+
+/* HOVER BOX */
+.box:hover{
+    transform: translateY(-10px); /* Box naik */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3); /* Bayangan lebih besar */
+}
+
+/* =========================
+   POSTER POTENSI
+   ========================= */
+.poster{
+    display: flex; /* Flexbox */
+    justify-content: center; /* Tengah horizontal */
+    align-items: center; /* Tengah vertical */
+    margin: auto; /* Tengah otomatis */
+    background: white; /* Background putih */
+    padding: 25px; /* Jarak dalam */
+    margin-top: 20px; /* Jarak atas */
+    border-radius: 10px; /* Sudut melengkung */
+    width: fit-content; /* Ukuran mengikuti isi */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Bayangan */
+}
+
+/* GAMBAR POSTER */
+.poster img{
+    transition: 0.4s; /* Animasi */
+}
+
+/* HOVER GAMBAR POSTER */
+.poster img:hover{
+    transform: scale(1.03); /* Zoom sedikit */
+}
+
+/* GAMBAR CONTAINER1 */
+.container1 img{
+    width: 25%; /* Lebar gambar */
+    border-radius: 20px; /* Sudut melengkung */
+}
+
+/* =========================
+   CONTAINER
+   ========================= */
+.container{
+    display: flex; /* Mengaktfkan Flexbox */
+    justify-content: center; /* Membuat isi berada di tengah horizontal */
+    text-align: center; /* Teks tengah */
+    max-width: 1000px; /* Lebar maksimal */
+    margin: auto; /* Tengah otomatis */
+    padding: 30px;
+}
+
+/* =========================
+   CARD
+   ========================= */
+.card{
+    text-align: center; /* Teks rata tengah */
+    background: white; /* Background putih */
+    padding: 25px; /* Jarak dalam */
+    margin-top: 20px; /* Jarak atas */
+    border-radius: 10px; /* Sudut melengkung */
+    padding: 25px; /* Jarak dalam card */
+    width: fit-content; /* Ukuran mengikuti isi */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Bayangan */
+    transition: 0.3s; /* Animasi */
+}
+
+/* =========================
+   GALERI PADA CARD
+   ========================= */
+.card img{
+    width: 300px; /* Lebar gambar */
+    border-radius: 10px; /* Sudut melengkung */
+    margin-top: 15px; /* Jarak atas */
+    justify-content: space-between; /* Jarak antar isi */
+
+}
+
+/* =========================
+   BUTTON
+   ========================= */
+.btn{
+    display: inline-block; /* Agar bisa diberi ukuran */
+    margin-top: 15px; /* Jarak atas */
+    padding: 12px 20px; /* Jarak dalam */
+    background: #0f766e; /* Warna tombol */
+    color: white; /* Warna teks */
+    text-decoration: none; /* Hilangkan underline */
+    border-radius: 8px; /* Sudut melengkung */
+    transition: 0.3s; /* Animasi */
+}
+
+/* HOVER BUTTON */
+.btn:hover{
+    background: #134e4a; /* Warna hover */
+    transform: scale(1.05); /* Zoom */
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+.footer{
+    background: #134e4a; /* Background footer */
+    color: white; /* Warna teks */
+    padding: 40px 20px 10px; /* Jarak dalam */
+    margin-top: 50px; /* Jarak atas */
+}
+
+/* CONTAINER FOOTER */
+.footer-container{
+    display: flex; /* Flexbox */
+    justify-content: space-between; /* Jarak antar kolom */
+    flex-wrap: wrap; /* Turun jika sempit */
+    gap: 30px; /* Jarak */
+}
+
+/* LOGO FOOTER */
+.footer-about img{
+    width: 80px; /* Ukuran logo */
+    margin-bottom: 10px; /* Jarak bawah */
+    border-radius: 10px; /* Sudut melengkung */
+}
+
+/* KOLOM FOOTER */
+.footer-about,
+.footer-social,
+.footer-contact{
+    flex: 1; /* Membagi ruang */
+    min-width: 200px; /* Lebar minimal */
+}
+
+/* JUDUL FOOTER */
+.footer h2,
+.footer h3{
+    margin-bottom: 15px; /* Jarak bawah */
+}
+
+/* LINK SOSIAL */
+.footer-social a{
+    display: block; /* Per link per baris */
+    color: white; /* Warna teks */
+    text-decoration: none; /* Hilangkan underline */
+    margin-bottom: 8px; /* Jarak bawah */
+    transition: 0.3s; /* Animasi */
+}
+
+/* HOVER LINK SOSIAL */
+.footer-social a:hover{
+    color: #60a5fa; /* Warna hover */
+    transform: translateX(5px); /* Geser kanan */
+}
+
+/* FOOTER PALING BAWAH */
+.footer-bottom{
+    text-align: center; /* Tengah */
+    margin-top: 30px; /* Jarak atas */
+    border-top: 1px solid rgba(255,255,255,0.2); /* Garis atas */
+    padding-top: 15px; /* Jarak atas */
+    font-size: 14px; /* Ukuran teks */
+}
+
+/* =========================
+   RESPONSIVE HP
+   ========================= */
+@media(max-width:768px){
+
+    .hero-text h1{
+        font-size: 28px; /* Mengecilkan judul */
+    }
+
+    nav ul{
+        flex-direction: column; /* Menu vertikal */
+        align-items: center; /* Tengah */
+    }
+}
+
+/* =========================
+   FOTO GALERI EVENT
+   ========================= */
+.galeri{
+    display: flex; /* Foto sejajar */
+    justify-content: center; /* Tengah */
+    gap: 20px; /* Jarak */
+    margin-top: 30px; /* Jarak atas */
+}
+
+/* FOTO */
+.foto{
+    text-align: center; /* Tengah */
+}
+
+/* GAMBAR FOTO */
+.foto img{
+    width: 350px; /* Lebar */
+    height: 300px; /* Tinggi */
+    object-fit: cover; /* Gambar proporsional */
+    border-radius: 15px; /* Sudut melengkung */
+    transition: 0.4s; /* Animasi */
+}
+
+/* HOVER FOTO */
+.foto img:hover{
+    transform: translateY(-10px); /* Naik */
+    background: #3f537c; /* Background hover */
+    transform: scale(1.05); /* Zoom */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3) /* Bayangan */
+}
+
+/* =========================
+   PROFIL DESA
+   ========================= */
+.container1{
+    display: flex; /* Flexbox */
+    justify-content: space-between; /* Jarak antar isi */
+    align-items: center; /* Tengah vertical */
+    padding: 20px; /* Jarak dalam */
+}
+
+/* GAMBAR PROFIL */
+.container1 img{
+    width: 350px; /* Lebar gambar */
+    border-radius: 20px; /* Sudut melengkung */
+}
+
+/* =========================
+   PEMISAH SECTION
+   ========================= */
+.pemisah {
+    background: #134e4a; /* Warna background */
+    padding: 30px; /* Jarak dalam */
+    position: sticky; /* Menempel */
+    top: 0; /* Posisi atas */
+}
+
+/* =========================
+   PETA
+   ========================= */
+.peta{
+    padding: 50px; /* Jarak dalam */
+}
+
+/* JUDUL PETA */
+.peta h1{
+    text-align: center; /* Tengah */
+}
+
+/* CONTAINER PETA */
+.peta-container{
+    display: flex; /* Flexbox */
+    gap: 30px; /* Jarak */
+}
+
+/* TEKS PETA */
+.peta-text{
+    flex: 1; /* Membagi ruang */
+}
+
+/* MAPS */
+.peta-map{
+    flex: 1; /* Membagi ruang */
+    text-align: center; /* Tengah */
+}
+
+/* ITEM INFORMASI */
+.item{
+    display: flex; /* Flexbox */
+    gap: 10px; /* Jarak */
+    padding: 15px 0; /* Jarak atas bawah */
+    border-bottom: 1px solid #ccc; /* Garis bawah */
+}
+
+/* =========================
+   STATISTIK
+   ========================= */
+.statistik{
+    display: flex; /* Flexbox */
+    justify-content: center; /* Tengah */
+    gap: 20px; /* Jarak */
+    margin-top: 40px; /* Jarak atas */
+    flex-wrap: wrap; /* Turun jika kecil */
+}
+
+/* BOX STATISTIK */
+.stat-box{
+    background: white; /* Background putih */
+    width: 220px; /* Lebar */
+    padding: 30px; /* Jarak dalam */
+    border-radius: 15px; /* Sudut melengkung */
+    text-align: center; /* Tengah */
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Bayangan */
+
+    transition: 0.3s; /* Animasi */
+}
+
+/* HOVER STATISTIK */
+.stat-box:hover{
+    transform: scale(1.05); /* Zoom */
+}
+
+/* ANGKA STATISTIK */
+.stat-box h1{
+    color: #0f766e; /* Warna angka */
+    font-size: 40px; /* Ukuran angka */
+}
